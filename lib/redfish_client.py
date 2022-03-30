@@ -90,13 +90,13 @@ class redfish_client:
 
 if __name__ == "__main__":
 
-    hostname = '192.168.1.105'
+    hostname = '192.168.23.129'
     port = 8080
     username = "admin"
     password = "Password1"
     
     test = redfish_client()
-    test.RESTClient_Post_Init(hostname , port , username , password)
+    test.RESTClient_Init(hostname , port , username , password)
     
     # Get example
     test.RESTClient_Get("/redfish/v1/")
